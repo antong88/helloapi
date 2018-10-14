@@ -70,7 +70,7 @@ handlers.hello = (data, callback) => {
 
 //notFound handler
 handlers.notFound = (data, callback) => {
-  callback(404);
+  callback(404, {'message': 'Not found.'});
 };
 
 //declare the router
